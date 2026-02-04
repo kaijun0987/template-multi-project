@@ -1,3 +1,13 @@
+Introduction to this Repo
+
+这个Repo 是一个 template 本身 是已经setup 好 eslist, tailwindcss, pnpm script, workspace 和一个 子 project 的 template。
+
+每次要开新的子 project 就只需要 按照下面的 “How to create a new sub project” 的 步骤就可以了。
+
+你可以按照“How to start template project” 启动 子 project “template” 试玩。
+
+另外如果你需要安装library 你需要分辨他是安装在 dependencies 还是 devDependencies。如果是安装在dependencies 你需要按照“How to install dependancy in inner project”。如果你要安装devDependencies 的话就参考"How to install devDependencies"。
+
 How to start template project
 
 1. pnpm template
@@ -11,3 +21,17 @@ How to create a new sub project
 5. 在跟目录的 package.json script 复制 "template": "pnpm --filter @lab/template dev"
 6. 改成 "p2": "pnpm --filter @lab/project-02 dev", (p2 随意起名，project-02 按照上面)
 7. 运行 pnpm p2 即可。
+
+How to install dependancy in inner project
+
+1. 添加 pnpm -F @lab/template add <pkg>
+2. 删除 pnpm -F @lab/template add -D <dev-pkg>
+
+How to install devDependencies
+
+1. 如果是全局使用请按照下面的方法
+   a. pnpm add -D <pkg>
+   b. pnpm remove <pkg>
+2. 如果是只在子目录使用请按照下面的方法
+   a. pnpm -F @lab/template add -D <pkg>
+   b. pnpm -F @lab/template remove <pkg>
