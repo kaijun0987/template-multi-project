@@ -1,0 +1,10 @@
+@import 'tailwindcss';
+
+@import './animations.css';
+@import './custom.css';
+@import './embla-carousel.css';
+
+@plugin '@tailwindcss/typography';
+
+@theme {
+}

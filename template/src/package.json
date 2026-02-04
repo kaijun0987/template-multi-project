@@ -1,0 +1,9 @@
+{
+  "name": "@lab/template-name",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  }
+}
