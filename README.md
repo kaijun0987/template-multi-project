@@ -1,3 +1,7 @@
+How to start template project
+1. pnpm template
+
+
 How to create a new sub project 
 1. 复制 projects/template 文件夹。
 2. 改名为 project-02。
