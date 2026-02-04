@@ -1,0 +1,11 @@
+{
+  "name": "@lab/template",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,html,json,md}\""
+  }
+}
